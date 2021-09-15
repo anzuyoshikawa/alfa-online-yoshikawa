@@ -72,7 +72,7 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+            <a class="link-hint" href="hint1.html" target="hint1">ヒントボタン ></a>
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
@@ -87,9 +87,9 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__content">なんとか1問目をクリアできたみたいだ！<br>
+                残りはあと4問。<br>
+                2つ目のステージに進もう！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -101,14 +101,14 @@ Youtube貼り付けここまで -->
 
       <!-- STAGE2　ここから -->
       <!---------------------------------------------------------------------
-        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
+        クリア画面の「1つ目のステージへ」ボタンをクリックしたら表示します。
         v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
       ----------------------------------------------------------------------->
       <div v-if="next['stage1']" id="sectionStage2" class="stage">
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>あれはなんだ？</h2>
               <p class="text-center">家庭科室に入ることができた！<br>
                 すぐに目に入ったのは黒板にある４つの謎。<br>
                 これらを解くことで、きっと次のステップに繋がるはずだ！</p>
